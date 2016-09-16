@@ -1,0 +1,53 @@
+=============================================================
+
+Example files for the CSE-Refresher Course
+
+made by Stephan Lenz
+
+=============================================================
+
+These Files will be downloaded from the web during the
+Refresher Course. The files will be Used for a Demonstration
+of elementary Linux commands.
+
+Tasks:
+
+ - create a new directory named "C-Refresher"
+     mkdir C-Refresher
+ - go into the directory
+     cd C-Refresher
+ - download the example files
+     wget [some link]
+ - unpack the files
+     tar [...]
+ - remove the arcive
+     rm examples.tar.gz
+ - go into the new directory
+     cd examples
+ - list the content of the directory
+     ls
+ - find out which the biggest file is by sorting
+     ls -l | sort -k 5 -n
+ - open the biggest file in a text editor
+     gedit [...].[...]
+ - 
+
+
+ - find out how many presidents had "William" as first name
+     grep "William" presidents.dat
+ - find out how many presidents have a middle name
+     grep ".* [[:alpha:]]\. .*" presidents.dat
+ - write all timespans in a file of the format
+   begin end
+   begin end
+     cat presidents.dat | cut -d"(" -f2 | tr -d ")" | tr "-" " " > duration.dat
+
+
+
+ - compile the program compute_duration.cpp
+     gcc compute_duration.c -o compute_duration
+ - call the program with the file duration.dat as a parameter
+     ./compute_duration duration.dat
+
+
+

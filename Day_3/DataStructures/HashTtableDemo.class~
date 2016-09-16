@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class HashTableDemo {
+
+   public static void main(String args[]) {
+      // Create a hash map
+      Hashtable balance = new Hashtable();
+      Enumeration names;
+      String str;
+      double bal;
+
+      balance.put("Z", new Double(3434.34));
+      balance.put("M", new Double(123.22));
+      balance.put("A", new Double(1378.00));
+      balance.put("D", new Double(99.22));
+      balance.put("Q", new Double(-19.08));
+
+      // Show all balances in hash table.
+      names = balance.keys();
+      while(names.hasMoreElements()) {
+         str = (String) names.nextElement();
+         System.out.println(str + ": " +
+         balance.get(str));
+      }
+      System.out.println();
+      // Deposit 1,000 into Z's account
+      bal = ((Double)balance.get("Z")).doubleValue();
+      balance.put("Z", new Double(bal+1000));
+      System.out.println("Z's new balance: " +
+      balance.get("Z"));
+   }
+}
