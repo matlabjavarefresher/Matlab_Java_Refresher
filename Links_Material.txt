@@ -1,0 +1,4 @@
+1) http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/ - A good 
+   introduction to Linear Algebra
+
+  
