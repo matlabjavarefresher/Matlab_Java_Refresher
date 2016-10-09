@@ -1,0 +1,5 @@
+1) Fn - F9
+2) Separate code into small functions
+3) Comment code as much as possible
+4) Use checkpoints in b/w to make sure your code is right
+5) Code must have variable dependencies - you change one, all dependent members should change

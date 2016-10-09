@@ -1,0 +1,16 @@
+clear;
+x=-2*pi:0.2:2*pi;
+y=-2*pi:0.2:2*pi;
+[X,Y]=meshgrid(x,y);
+%z=x^2+y^2
+figure
+Z=X.^2+Y.^2;
+surf(Z)
+%z=sinx+siny
+figure
+Z=sin(X)+sin(Y);
+surf(Z)
+%z=
+figure
+Z=(X.^2+Y.^2).*cos(X);
+surf(Z)
